@@ -4,9 +4,9 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "bunx --bun vite",
-    "build": "bunx --bun vite build",
-    "preview": "bunx --bun vite preview",
+    "dev": "bunx vite",
+    "build": "bunx vite build",
+    "preview": "bunx vite preview",
     "format": "bunx biome format --write",
     "lint": "bunx biome lint --write",
     "check": "bunx biome check --write"
@@ -17,6 +17,7 @@
   },
   "devDependencies": {
     "@biomejs/biome": "2.2.4",
+    "@types/bun": "^1.2.22",
     "@types/react": "^19.1.13",
     "@types/react-dom": "^19.1.9",
     "@vitejs/plugin-react": "^5.0.3",
