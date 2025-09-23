@@ -40,6 +40,9 @@
     }
   },
   "json": {
+    "assist": {
+      "enabled": false
+    },
     "formatter": {
       "trailingCommas": "none"
     }
