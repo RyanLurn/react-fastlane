@@ -54,7 +54,10 @@
     },
     "enabled": true,
     "rules": {
-      "recommended": true
+      "recommended": true,
+      "suspicious": {
+        "noUnknownAtRules": "off"
+      }
     }
   },
   "vcs": {

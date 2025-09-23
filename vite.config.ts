@@ -1,3 +1,4 @@
+import tailwindcss from "@tailwindcss/vite";
 import react from "@vitejs/plugin-react";
 // biome-ignore lint/style/useNodejsImportProtocol: We use Bun here instead of Node
 import path from "path";
@@ -11,6 +12,7 @@ export default defineConfig({
         plugins: ["babel-plugin-react-compiler"],
       },
     }),
+    tailwindcss(),
   ],
   resolve: {
     alias: {
