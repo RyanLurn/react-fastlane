@@ -57,6 +57,9 @@
       "recommended": true,
       "suspicious": {
         "noUnknownAtRules": "off"
+      },
+      "style": {
+        "useComponentExportOnlyModules": "on"
       }
     }
   },
