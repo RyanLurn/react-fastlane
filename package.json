@@ -1,4 +1,16 @@
 {
+  "name": "react-fastlane",
+  "private": true,
+  "type": "module",
+  "version": "0.0.0",
+  "scripts": {
+    "build": "vite build",
+    "check": "biome check --write",
+    "dev": "vite",
+    "format": "biome format --write",
+    "lint": "biome lint --write",
+    "preview": "vite preview"
+  },
   "dependencies": {
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
@@ -11,19 +23,8 @@
     "@types/react-dom": "^19.1.9",
     "@vitejs/plugin-react": "^5.0.3",
     "babel-plugin-react-compiler": "^19.1.0-rc.3",
+    "lefthook": "^1.13.2",
     "typescript": "~5.9.2",
     "vite": "^7.1.7"
-  },
-  "name": "react-fastlane",
-  "private": true,
-  "scripts": {
-    "build": "vite build",
-    "check": "biome check --write",
-    "dev": "vite",
-    "format": "biome format --write",
-    "lint": "biome lint --write",
-    "preview": "vite preview"
-  },
-  "type": "module",
-  "version": "0.0.0"
+  }
 }
