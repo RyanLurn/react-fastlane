@@ -54,7 +54,13 @@
     },
     "enabled": true,
     "rules": {
-      "recommended": true
+      "recommended": true,
+      "suspicious": {
+        "noUnknownAtRules": "off"
+      },
+      "style": {
+        "useComponentExportOnlyModules": "on"
+      }
     }
   },
   "vcs": {

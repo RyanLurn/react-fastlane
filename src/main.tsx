@@ -4,6 +4,7 @@ import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import "@/index.css";
 import App from "@/App.tsx";
+import { Providers } from "@/components/providers";
 
 scan({
   enabled: process.env.NODE_ENV === "development",
@@ -12,6 +13,8 @@ scan({
 // biome-ignore lint/style/noNonNullAssertion: Vite React's default
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
-    <App />
+    <Providers>
+      <App />
+    </Providers>
   </StrictMode>,
 );
