@@ -1,6 +1,15 @@
+import { useEffect } from "react";
 import { ModeToggle } from "@/components/utils/mode-toggle";
+import { connectDB, db } from "@/lib/db";
 
 function App() {
+  useEffect(() => {
+    connectDB();
+    return () => {
+      db.close();
+    };
+  }, []);
+
   return (
     <div className="flex h-screen w-screen flex-col items-center justify-center">
       <ModeToggle className="fixed top-3 right-3" />

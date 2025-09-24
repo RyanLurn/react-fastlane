@@ -6,6 +6,17 @@ import { defineConfig } from "vite";
 
 // https://vite.dev/config/
 export default defineConfig({
+  esbuild: {
+    supported: {
+      "top-level-await": true,
+    },
+  },
+  optimizeDeps: {
+    esbuildOptions: {
+      target: "esnext",
+    },
+    exclude: ["@surrealdb/wasm"],
+  },
   plugins: [
     react({
       babel: {
